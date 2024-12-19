@@ -78,5 +78,6 @@ services:
     command: npm run start:dev
     environment:
       - PORT=${AUTH_MS_PORT}
+      - JWT_SECRET=${AUTH_MS_JWT_SECRET}
       - NATS_SERVERS=nats://nats-server:4222
       - DATABASE_URL=${AUTH_MS_DATABASE_URL}
